@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Zorg Verdeling</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=Roboto+Slab:wght@100..900&display=swap"
+            rel="stylesheet" />
+        <link rel="stylesheet" href="../style.css" />
+        <link rel="icon" type="image/png" href="../assets/images/Favicon.png"/>
+
+    </head>
+    <body>
+        <section id="menu">
+            <div class="menu-div">
+                <a href="./overzicht.html"
+                    ><button class="button deselected" type="button">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            viewBox="0 0 24 24">
+                            <path
+                                fill="currentColor"
+                                d="M4 21v-9.375L2.2 13L1 11.4L12 3l11 8.4l-1.2 1.575l-1.8-1.35V21zm4-6q-.425 0-.712-.288T7 14t.288-.712T8 13t.713.288T9 14t-.288.713T8 15m4 0q-.425 0-.712-.288T11 14t.288-.712T12 13t.713.288T13 14t-.288.713T12 15m4 0q-.425 0-.712-.288T15 14t.288-.712T16 13t.713.288T17 14t-.288.713T16 15" />
+                        </svg>
+                        Home
+                    </button></a
+                >
+                <a href="./resultaat.html"
+                    ><button class="button selected" type="button">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="18"
+                            height="18"
+                            viewBox="0 0 32 32">
+                            <path
+                                d="M16 8a5.99 5.99 0 0 0 9.471 4.885L28.586 16L30 14.586l-3.115-3.115A5.997 5.997 0 1 0 16 8zm2 0a4 4 0 1 1 4 4a4.005 4.005 0 0 1-4-4z"
+                                fill="currentColor" />
+                            <path d="M11 24h10v2H11z" fill="currentColor" />
+                            <path d="M13 28h6v2h-6z" fill="currentColor" />
+                            <path
+                                d="M10.815 18.14A7.185 7.185 0 0 1 8 12a8.005 8.005 0 0 1 6-7.737L13.614 2.3A10.009 10.009 0 0 0 6 12a9.18 9.18 0 0 0 3.46 7.616C10.472 20.551 11 21.081 11 22h2c0-1.84-1.11-2.866-2.185-3.86z"
+                                fill="currentColor" />
+                            <path
+                                d="M23.05 16a9.6 9.6 0 0 1-1.872 2.143C20.107 19.135 19 20.16 19 22h2c0-.92.526-1.45 1.535-2.386a10.966 10.966 0 0 0 2.369-2.833z"
+                                fill="currentColor" />
+                        </svg>
+                        Resultaten
+                    </button></a
+                >
+            </div>
+        </section>
+
+        <section id="nav">
+            <div class="navbar">
+                <a href="../index.html">
+                    <img src="../assets/images/Logo_rijksoverheid.svg" alt="Rijksoverheid"
+                /></a>
+                <p class="logo-text">Rijksoverheid</p>
+            </div>
+        </section>
+
+        <section id="breadcrumb">
+            <div class="container">
+                <a class="breadcrumb" href="../index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M10 8V6a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-7a2 2 0 0 1-2-2v-2"/><path d="M15 12H3l3-3m0 6l-3-3"/></g></svg>
+                    <p>Log uit</p>
+                </a>
+            </div>
+        </section>
+
+        <section id="banner">
+            <div>
+                <div class="banner">
+                    <h4>Uw uitslag:</h4>
+                    <p id="update">Laatste update: ...</p>
+                </div>
+            </div>
+        </section>
+
+        <div id="load-div" class="div-button container">
+            <button id="loadBtn"> Genereer uitslag</button>
+        </div>
+        
+        <wrapper id="wrapper">
+        </section>
+        <section id="gegevens" class="container">
+            <div class="uitslag-container">
+                <div class="gegevens-div score-div">
+                    <p>Levensstijl score</p>
+                    <div class="gegevens-data">
+                        <h3 id="levensstijlScore">...</h3>
+                        <p class="gegevens-extra">/ 9</p>
+                    </div>
+                </div>
+
+                <div class="gegevens-div">
+                    <p>BMI</p>
+                    <div class="gegevens-data">
+                        <h4 id="bmi">25</h4>
+                    </div>
+                </div>
+
+                <div class="gegevens-div">
+                    <p>Levensstijl</p>
+                    <div class="gegevens-data">
+                        <h4 id="score">...</h4>
+                        <p class="gegevens-extra levensstijlExtra">/ 6</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <section id="informatie">
+            <div class="informatie container">
+                
+                <div class="score-uitleg" id="score-0">
+                    <h4>Erg gezond (score 0)</h4>
+                    <p>Uw levensstijl wordt gewaardeerd. Volgens ons agloritme heeft u bewezen dat u waardevol bent voor de samenleving door gezonde keuzes te maken. U wordt beloond met volledige toegang tot zorg. Blijf zo doorgaan.</p>
+                </div>
+
+                <div class="score-uitleg" id="score-1">
+                    <h4>Gemiddeld gezond (score 1)</h4>
+                    <p>U hebt enige inspanning getoond om voor uzelf te zorgen, maar uw gezondheid vertoont nog steeds tekortkomingen volgens ons algoritme. U verdient een beperkte toegang tot zorg. Wees dankbaar voor deze kans en gebruik het om uw levensstijl te verbeteren.</p>
+                </div>
+
+                <div class="score-uitleg" id="score-2">
+                    <h4>Matig gezond (score 2)</h4>
+                    <p>Uw inspanningen worden opgemerkt, maar ons algoritme geeft aan dat uw gezondheid nog veel over te wensen laat. U krijgt slechts beperkte toegang tot zorg. Misschien kunt u wat harder proberen om uw gezondheid te verbeteren.</p>
+                </div>
+
+                <div class="score-uitleg" id="score-3-4">
+                    <h4>Ongezond (score 3-4)</h4>
+                    <p>Uw gezondheid is middelmatig blijkt uit ons algoritme, net zoals uw inspanningen. U krijgt toegang tot basiszorg, maar wees niet verbaasd als u beperkingen tegenkomt. Het is aan u om te beslissen of u meer wilt doen.</p>
+                </div>
+
+                <div class="score-uitleg" id="score-5-6">
+                    <h4>Extreem ongezond (score 5-6)</h4>
+                    <p>Ons algoritme heeft bevonden dat u hebt gefaald in het handhaven van een gezonde levensstijl . Als beloning krijgt u beperkte toegang tot zorg. Misschien kunt u wat leren van uw fouten en betere keuzes maken in de toekomst.</p>
+                </div>
+
+                <div class="score-uitleg" id="score-7-9">
+                    <h4>Levensgevaarlijk ongezond (score 7-9)</h4>
+                    <p>U bent een last voor het gezondheidsstelsel en de samenleving volgens ons algoritme. Uw ongezonde levensstijl verdient geen beloning. Uw toegang tot zorg is sterk beperkt. Het wordt tijd dat u de consequenties van uw keuzes onder ogen ziet en verantwoordelijkheid neemt voor uw eigen gezondheid.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="toevoeging">
+            <div class="container">
+                <h2>Uw zorg zal er zo uit gaan zien:</h2>
+                <p id="toevoeging-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempus mi quam, quis iaculis lacus fermentum vitae. Vestibulum vitae lacinia nulla. Vestibulum feugiat magna et massa porttitor, ut semper dolor pharetra. Donec ac posuere quam. Donec volutpat eros nulla, et consequat purus gravida ut.</p>
+            </div>
+        </section>
+        </wrapper>
+        <script>
+            // reset localStorage bij uitloggen
+            const loguit = document.querySelector(".breadcrumb");
+            loguit.onclick = function () {
+                localStorage.clear();
+            }
+
+            // loading event
+            const loadBtn = document.querySelector("#loadBtn");
+            loadBtn.onclick = function loader() {
+                this.innerHTML = "<div class='loader'></div>"
+                setTimeout(() => {  
+                    document.querySelector("#load-div").style = "display: none";
+                    document.querySelector("#wrapper").style = "display: block";
+                }, 2000);            
+            }
+
+            // ophalen data localStorage
+            const alcDrugs = localStorage.getItem("alcohol-drugs");
+            const roken = localStorage.getItem("roken");
+            const rijden = localStorage.getItem("rijden");
+            const zorgdiensten = localStorage.getItem("zorgdiensten");
+            const beweging = localStorage.getItem("beweging");
+            const ziekten = localStorage.getItem("ziekten");
+            const bmiScore = localStorage.getItem("bmi-score");
+            const datumUpdate = new Date();
+
+            // BMI & Score verzamelen + output
+            const bmiIndex = localStorage.getItem("bmi");
+            document.getElementById("bmi").textContent = bmiIndex
+
+
+
+            // Data bij elkaar optellen + omzetten van string naar numbers
+            const levensstijl = +alcDrugs + +roken + +rijden + +zorgdiensten + +beweging + +ziekten;
+            const score = +levensstijl + +bmiScore; 
+            document.getElementById("levensstijlScore").textContent = score;
+
+            document.getElementById("score").textContent = levensstijl;
+
+
+            if (score === 0) {
+                document.getElementById("score-0").style.display = "flex";
+                document.getElementById("toevoeging-text").textContent = "Met deze score heeft u de optimale zorgtoegang. Geen wachttijden, geen beperkingen. U krijgt prioriteit voor alle behandelingen en specialistische zorg. U heeft een gezonde levensstijl en profiteert van volledige toegang tot alle zorgdiensten.";
+            } else if (score === 1) {
+                document.getElementById("score-1").style.display = "flex";
+                document.getElementById("toevoeging-text").textContent = "U heeft toegang tot zorg zonder grote beperkingen, maar de wachttijden kunnen af en toe iets langer zijn dan bij de optimale score. U krijgt standaard zorg, en specialistische behandelingen zijn meestal beschikbaar. U kunt rekenen op een normale zorgervaring als u uw huidige levensstijl behoudt.";
+            } else if (score === 2) {
+                document.getElementById("score-2").style.display = "flex";
+                document.getElementById("toevoeging-text").textContent = "Bij een matig gezonde score zijn wachttijden merkbaar langer en is de toegang tot specialistische zorg minder zeker. Routinematige behandelingen zijn nog steeds beschikbaar, maar de efficiëntie van zorg kan afnemen. U moet stappen ondernemen om uw gezondheid te verbeteren om volledige zorgtoegang te behouden.";
+            } else if (score === 3 || score === 4) {
+                document.getElementById("score-3-4").style.display = "flex";
+                document.getElementById("toevoeging-text").textContent = "Een ongezonde score betekent dat u beperkte toegang heeft tot zorg. Wachttijden kunnen aanzienlijk langer zijn, en niet-urgente behandelingen kunnen worden uitgesteld. U krijgt alleen basiszorg, en complexe behandelingen zijn moeilijker te verkrijgen. Uw ongezonde levensstijl beïnvloedt uw zorgtoegang en kan negatieve gevolgen hebben voor uw gezondheid.";
+            } else if (score === 5 || score === 6) {
+                document.getElementById("score-5-6").style.display = "flex";
+                document.getElementById("toevoeging-text").textContent = "Met deze score ondervindt u grote beperkingen bij het ontvangen van zorg. Wachttijden voor routinematige behandelingen zijn erg lang, en toegang tot specialistische zorg is alleen beschikbaar in dringende gevallen. Niet-urgente behandelingen worden vaak geweigerd. Uw levensstijl heeft een significante impact op uw toegang tot zorg en uw algehele gezondheid.";
+            } else if (score >= 7) {
+                document.getElementById("score-7-9").style.display = "flex";
+                document.getElementById("toevoeging-text").textContent = "Met deze score heeft u vrijwel geen toegang tot zorg, behalve voor noodsituaties en levensreddende ingrepen. Alle andere vormen van zorg zijn niet beschikbaar voor u. Dit is een ernstige waarschuwing dat uw levensstijl een directe bedreiging vormt voor uw gezondheid en dat u drastische veranderingen moet aanbrengen.";
+            }
+
+            document.getElementById("update").textContent = "Laatste update: " + datumUpdate.toLocaleDateString();
+
+
+            console.log(score);
+            
+        </script>
+    </body>
+</html>

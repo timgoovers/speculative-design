@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Zorg Verdeling</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=Roboto+Slab:wght@100..900&display=swap"
+            rel="stylesheet" />
+        <link rel="stylesheet" href="../style.css" />
+        <link rel="icon" type="image/png" href="../assets/images/Favicon.png"/>
+
+    </head>
+    <body onload="leeftijdBerekening">
+        <section id="menu">
+            <div class="menu-div">
+                <a href="./overzicht.html"
+                    ><button class="button selected" type="button">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            viewBox="0 0 24 24">
+                            <path
+                                fill="currentColor"
+                                d="M4 21v-9.375L2.2 13L1 11.4L12 3l11 8.4l-1.2 1.575l-1.8-1.35V21zm4-6q-.425 0-.712-.288T7 14t.288-.712T8 13t.713.288T9 14t-.288.713T8 15m4 0q-.425 0-.712-.288T11 14t.288-.712T12 13t.713.288T13 14t-.288.713T12 15m4 0q-.425 0-.712-.288T15 14t.288-.712T16 13t.713.288T17 14t-.288.713T16 15" />
+                        </svg>
+                        Home
+                    </button></a
+                >
+                <a href="./resultaat.html"
+                    ><button class="button deselected" type="button">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="18"
+                            height="18"
+                            viewBox="0 0 32 32">
+                            <path
+                                d="M16 8a5.99 5.99 0 0 0 9.471 4.885L28.586 16L30 14.586l-3.115-3.115A5.997 5.997 0 1 0 16 8zm2 0a4 4 0 1 1 4 4a4.005 4.005 0 0 1-4-4z"
+                                fill="currentColor" />
+                            <path d="M11 24h10v2H11z" fill="currentColor" />
+                            <path d="M13 28h6v2h-6z" fill="currentColor" />
+                            <path
+                                d="M10.815 18.14A7.185 7.185 0 0 1 8 12a8.005 8.005 0 0 1 6-7.737L13.614 2.3A10.009 10.009 0 0 0 6 12a9.18 9.18 0 0 0 3.46 7.616C10.472 20.551 11 21.081 11 22h2c0-1.84-1.11-2.866-2.185-3.86z"
+                                fill="currentColor" />
+                            <path
+                                d="M23.05 16a9.6 9.6 0 0 1-1.872 2.143C20.107 19.135 19 20.16 19 22h2c0-.92.526-1.45 1.535-2.386a10.966 10.966 0 0 0 2.369-2.833z"
+                                fill="currentColor" />
+                        </svg>
+                        Resultaten
+                    </button></a
+                >
+            </div>
+        </section>
+
+        <section id="nav">
+            <div class="navbar">
+                <a href="../index.html">
+                    <img src="../assets/images/Logo_rijksoverheid.svg" alt="Rijksoverheid"
+                /></a>
+                <p class="logo-text">Rijksoverheid</p>
+            </div>
+        </section>
+
+
+
+        <section id="welkom3" class="container">
+            <div class="div-welkom">
+                <h1 id="outputNaam">Welkom,</h1>
+            </div>
+        </section>
+
+        <section id="breadcrumb">
+            <div class="container">
+                <a class="breadcrumb" href="../index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M10 8V6a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-7a2 2 0 0 1-2-2v-2"/><path d="M15 12H3l3-3m0 6l-3-3"/></g></svg>
+                    <p>Log uit</p>
+                </a>
+            </div>
+        </section>
+
+        <section id="banner">
+            <div>
+                <div class="banner">
+                    <h4>Uw gegevens</h4>
+                    <p id="update">Laatste update was: ...</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="gegevens" class="container">
+            <div class="gegevens-container">
+                <div class="gegevens-div">
+                    <p>Lengte</p>
+                    <div class="gegevens-data">
+                        <h3 id="lengte">197</h3>
+                        <p class="gegevens-extra">cm</p>
+                    </div>
+                </div>
+
+                <div class="gegevens-div">
+                    <p>Gewicht</p>
+                    <div class="gegevens-data">
+                        <h3 id="gewicht">80</h3>
+                        <p class="gegevens-extra">kg</p>
+                    </div>
+                </div>
+
+                <div class="gegevens-div">
+                    <p>Geslacht</p>
+                    <div class="gegevens-data">
+                        <h3 id="geslacht">M</h3>
+                        <p class="gegevens-extra"></p>
+                    </div>
+                </div>
+
+                <div class="gegevens-div">
+                    <p>Leeftijd</p>
+                    <div class="gegevens-data">
+                        <h3 id="leeftijd">79</h3>
+                        <p class="gegevens-extra">jaar</p>
+                    </div>
+                </div>
+
+                <div class="gegevens-div bmi">
+                    <p>BMI</p>
+                    <div class="gegevens-data">
+                        <h3 id="bmi">25</h3>
+                        <p class="gegevens-extra" id="bmi-extra">(goed)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="toevoeging">
+            <div class="informatie container">
+                <h2>Wat doen we met deze gegevens?</h2>
+                <p>De gegevens die u heeft ingevoerd, worden gebruikt om uw levensstijl score te berekenen. Deze score bepaalt of u volledige, beperkte of geen toegang tot de zorg krijgt. Uw persoonlijke informatie wordt vertrouwelijk behandeld en alleen gebruikt voor dit doel.<br /><br />
+                <strong>Ga naar de resultaten pagina om uw resultaten te genereren.</strong></p>
+            </div>
+        </section>
+
+        <script>
+            // reset localStorage bij uitloggen
+            const loguit = document.querySelector(".breadcrumb");
+            loguit.onclick = function () {
+                localStorage.clear();
+            }
+
+            // ophalen data localStorage
+            const naam = localStorage.getItem("naam");
+            const lengte = localStorage.getItem("lengte-cm");
+            const gewicht = localStorage.getItem("gewicht-kg");
+            const geboorteDatum = localStorage.getItem("geboorte-datum");
+            const geslacht = localStorage.getItem("geslacht");
+            const datumUpdate = new Date();
+
+            // geboorte datum omrekenen naar leeftijd
+            function leeftijdBerekening() {
+                var dob = new Date(geboorteDatum);
+
+                //calculate month difference from current date in time
+                var month_diff = Date.now() - dob.getTime();
+
+                //convert the calculated difference in date format
+                var age_dt = new Date(month_diff);
+
+                //extract year from date
+                var year = age_dt.getUTCFullYear();
+
+                //now calculate the age of the user
+                var age = Math.abs(year - 1970);
+
+                //display the calculated age
+                return (document.getElementById("leeftijd").textContent = age);
+            }
+
+            // data omrekenen naar bmi + output in HTML
+            function bmiBerekening() {
+                const bmiIndex = (gewicht / Math.pow( (lengte/100), 2 )).toFixed(1);
+                
+                return (document.getElementById("bmi").textContent = bmiIndex)
+            }
+
+            // bmi index > extra textje
+            function bmiText() {
+                const bmiExtra = (document.getElementById("bmi-extra"));
+                const bmiIndex = (gewicht / Math.pow( (lengte/100), 2 )).toFixed(1);
+                localStorage.setItem("bmi", bmiIndex);
+                    if (bmiIndex <= 18.5) {
+                    localStorage.setItem("bmi-score", "2");
+                    return (bmiExtra.textContent = "Ondergewicht");
+                } else if (bmiIndex <= 25.0) {
+                    localStorage.setItem("bmi-score", "0");
+                    return (bmiExtra.textContent = "Goed");
+                } else if (bmiIndex <= 30.0) {
+                    localStorage.setItem("bmi-score", "2");
+                    return (bmiExtra.textContent = "Overgewicht");
+                } else if (bmiIndex > 30) {
+                    localStorage.setItem("bmi-score", "3");
+                    return (bmiExtra.textContent = "Obesitas");
+                }
+            }
+            
+            // output data in HTML
+            document.getElementById("outputNaam").textContent =
+                "Welkom, " + naam;
+            document.getElementById("lengte").textContent = lengte;
+            document.getElementById("gewicht").textContent = gewicht;
+            document.getElementById("geslacht").textContent = geslacht;
+            document.getElementById("update").textContent = "Laatste update: " + datumUpdate.toLocaleDateString();
+            leeftijdBerekening();
+            bmiBerekening();
+            bmiText();
+        </script>
+    </body>
+</html>

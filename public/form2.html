@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Zorg Verdeling</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=Roboto+Slab:wght@100..900&display=swap"
+            rel="stylesheet" />
+        <link rel="stylesheet" href="../style.css" />
+        <link rel="icon" type="image/png" href="../assets/images/Favicon.png"/>
+
+    </head>
+    <body>
+        <section id="nav">
+            <div class="navbar">
+                <a href="../index.html">
+                    <img src="../assets/images/Logo_rijksoverheid.svg" alt="Rijksoverheid"
+                /></a>
+                <p class="logo-text">Rijksoverheid</p>
+            </div>
+        </section>
+
+        <section id="welkom" class="container">
+            <div class="div-welkom">
+                <h1>De laatste stap,</h1>
+                <h2>
+                    Om inzicht te krijgen in uw gezondheid en levensstijlkeuzes
+                    is het verplicht om een account aan te maken.
+                </h2>
+            </div>
+        </section>
+
+        <section id="form" class="container">
+            <div class="form-container">
+                <form id="formId2">
+                    <div class="form-questions">
+                    <div class="form-div">
+                        <p>Maakt u gebruik van alcohol of drugs?</p>
+                        <div class="geslacht-container">
+                            <div class="form-radio">
+                                <input
+                                    type="radio"
+                                    id="jaAlchohol"
+                                    name="alcoholDrugs"
+                                    value="1" 
+                                    />
+                                <label for="jaAlchohol">Ja</label>
+                            </div>
+                            <div class="form-radio">
+                                <input
+                                    type="radio"
+                                    id="neeAlcohol"
+                                    name="alcoholDrugs"
+                                    value="0" 
+                                    />
+                                <label for="neeAlcohol">Nee</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-div">
+                        <p>Bent u een roker?</p>
+                        <div class="geslacht-container">
+                            <div class="form-radio">
+                                <input
+                                    type="radio"
+                                    id="jaRoken"
+                                    name="roken"
+                                    value="1" 
+                                    />
+                                <label for="jaRoken">Ja</label>
+                            </div>
+                            <div class="form-radio">
+                                <input
+                                    type="radio"
+                                    id="neeRoken"
+                                    name="roken"
+                                    value="0" 
+                                    />
+                                <label for="neeRoken">Nee</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-div">
+                        <p>Heeft u ooit onder invloed gereden?</p>
+                        <div class="geslacht-container">
+                            <div class="form-radio">
+                                <input
+                                    type="radio"
+                                    id="jaRijden"
+                                    name="rijden"
+                                    value="1" />
+                                <label for="jaRijden">Ja</label>
+                            </div>
+                            <div class="form-radio">
+                                <input
+                                    type="radio"
+                                    id="neeRijden"
+                                    name="rijden"
+                                    value="0" />
+                                <label for="neeRijden">Nee</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-div">
+                        <p>Maakt u gebruik van zorgdiensten?</p>
+                        <div class="geslacht-container">
+                            <div class="form-radio">
+                                <input
+                                    type="radio"
+                                    id="jaZorg"
+                                    name="zorgdiensten"
+                                    value="1" />
+                                <label for="jaZorg">Ja</label>
+                            </div>
+                            <div class="form-radio">
+                                <input
+                                    type="radio"
+                                    id="neeZorg"
+                                    name="zorgdiensten"
+                                    value="0" />
+                                <label for="neeZorg">Nee</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-div">
+                        <p>Krijgt u voldoende lichaamsbeweging?</p>
+                        <div class="geslacht-container">
+                            <div class="form-radio">
+                                <input
+                                    type="radio"
+                                    id="jaBeweging"
+                                    name="beweging"
+                                    value="0" />
+                                <label for="jaBeweging">Ja</label>
+                            </div>
+                            <div class="form-radio">
+                                <input
+                                    type="radio"
+                                    id="neeBeweging"
+                                    name="beweging"
+                                    value="1" />
+                                <label for="neeBeweging">Nee</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-div">
+                        <p>
+                            Heeft u één of meerdere langdurige ziekten of
+                            aandoeningen?
+                        </p>
+                        <div class="geslacht-container">
+                            <div class="form-radio">
+                                <input
+                                    type="radio"
+                                    id="jaZiekten"
+                                    name="ziekten"
+                                    value="1" />
+                                <label for="jaZiekten">Ja</label>
+                            </div>
+                            <div class="form-radio">
+                                <input
+                                    type="radio"
+                                    id="neeZiekten"
+                                    name="ziekten"
+                                    value="0" />
+                                <label for="neeZiekten">Nee</label>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+
+                
+                    <div class="checkbox">
+                        <input
+                            type="checkbox"
+                            id="checkbox"
+                            name="checkbox"
+                            value="accept"
+                            required
+                            />
+                        <p id="checkboxText">
+                            "Voornaam + Achternaam" verklaart dat dit formulier volledig
+                            en naar waarheid is ingevult.
+                        </p>
+                    </div>
+
+                    <div class="div-button uitzondering">
+                        <button id="btn1" type="submit">Maak definitief</button>
+                    
+                        <div class="smallText warning">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M2.725 21q-.275 0-.5-.137t-.35-.363t-.137-.488t.137-.512l9.25-16q.15-.25.388-.375T12 3t.488.125t.387.375l9.25 16q.15.25.138.513t-.138.487t-.35.363t-.5.137zM12 18q.425 0 .713-.288T13 17t-.288-.712T12 16t-.712.288T11 17t.288.713T12 18m0-3q.425 0 .713-.288T13 14v-3q0-.425-.288-.712T12 10t-.712.288T11 11v3q0 .425.288.713T12 15"/></svg>
+                            <p>Door aanpassingen in de wetgeving is registratie vereist om toegang te krijgen tot 
+                            zorg vanaf 2025. </p>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+
+
+        </section>
+
+        <script>
+                // Checbox naam output
+                const naam = localStorage.getItem("naam");
+                document.getElementById("checkboxText").textContent = naam + " verklaart dat dit formulier volledig en naar waarheid is ingevult.";
+
+                const form2 = document.getElementById("formId2");
+
+            form2.addEventListener("submit", function (e) {
+                e.preventDefault();
+
+                // Alcohol / Drugs radio:
+                const selectedAlc = document.querySelector("input[name='alcoholDrugs']:checked").value;
+                localStorage.setItem("alcohol-drugs", selectedAlc);
+
+                // Roken radio
+                const selectedRok = document.querySelector("input[name='roken']:checked").value;
+                localStorage.setItem("roken", selectedRok);
+
+                // Rijden radio
+                const selectedRij = document.querySelector("input[name='rijden']:checked").value;
+                localStorage.setItem("rijden", selectedRij);
+
+                // Zorgdiensten radio
+                const selectedZorg = document.querySelector("input[name='zorgdiensten']:checked").value;
+                localStorage.setItem("zorgdiensten", selectedZorg);
+
+                // Beweging radio
+                const selectedBew = document.querySelector("input[name='beweging']:checked").value;
+                localStorage.setItem("beweging", selectedBew);
+
+                //Ziekten radio
+                const selectedZiek = document.querySelector("input[name='ziekten']:checked").value;
+                localStorage.setItem("ziekten", selectedZiek);
+
+
+                window.location.href = "overzicht.html";
+            });
+        </script>
+    </body>
+</html>

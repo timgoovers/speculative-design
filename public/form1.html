@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Zorg Verdeling</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=Roboto+Slab:wght@100..900&display=swap"
+            rel="stylesheet" />
+        <link rel="stylesheet" href="../style.css" />
+        <link rel="icon" type="image/png" href="../assets/images/Favicon.png"/>
+    </head>
+    <body>
+        <section id="nav">
+            <div class="navbar">
+                <a href="../index.html">
+                    <img src="../assets/images/Logo_rijksoverheid.svg" alt="Rijksoverheid"
+                /></a>
+                <p class="logo-text">Rijksoverheid</p>
+            </div>
+        </section>
+
+        <section id="welkom" class="container">
+            <div class="div-welkom">
+                <h1>De eerste stap,</h1>
+                <h2>
+                    Om inzicht te krijgen in uw gezondheid en levensstijlkeuzes
+                    is het verplicht om een account aan te maken.
+                </h2>
+            </div>
+        </section>
+
+        <section id="form" class="container">
+            <div class="form-container">
+                <form id="formId">
+                    <div class="form-questions">
+                    <div class="form-div">
+                        <label for="naam">Voor-en achternaam</label>
+                        <input
+                            class="form-input"
+                            type="text"
+                            id="naam"
+                            name="naam"
+                            required
+                            placeholder="bijv. John Doe" />
+                    </div>
+
+                    <div class="form-div">
+                        <label for="datum">Geboortedatum</label>
+                        <input
+                            class="form-input"
+                            type="date"
+                            id="datum"
+                            name="datum"
+                            required />
+                    </div>
+
+                    <div class="form-div">
+                        <p>Geslacht</p>
+                        <div class="geslacht-container">
+                            <div class="form-radio">
+                                <input
+                                    type="radio"
+                                    name="geslacht"
+                                    id="radMan"
+                                    value="M" />
+                                <label for="radMan">Man</label>
+                            </div>
+                            <div class="form-radio">
+                                <input
+                                    type="radio"
+                                    name="geslacht"
+                                    id="radVrouw"
+                                    value="V" />
+                                <label for="radVrouw">Vrouw</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-div">
+                        <label for="lengte">Lengte (in cm)</label>
+                        <input
+                            class="form-input"
+                            type="text"
+                            id="lengte"
+                            name="lengte"
+                            required
+                            placeholder="bijv. 179" />
+                    </div>
+
+                    <div class="form-div">
+                        <label for="gewicht">Gewicht (in kg)</label>
+                        <input
+                            class="form-input"
+                            type="text"
+                            id="gewicht"
+                            name="gewicht"
+                            required
+                            placeholder="bijv. 80" />
+                    </div>
+                    </div>
+
+                    <div class="div-button uitzondering">
+                        <button id="btn1" type="submit">Ga verder</button>
+                        <div class="smallText warning">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M2.725 21q-.275 0-.5-.137t-.35-.363t-.137-.488t.137-.512l9.25-16q.15-.25.388-.375T12 3t.488.125t.387.375l9.25 16q.15.25.138.513t-.138.487t-.35.363t-.5.137zM12 18q.425 0 .713-.288T13 17t-.288-.712T12 16t-.712.288T11 17t.288.713T12 18m0-3q.425 0 .713-.288T13 14v-3q0-.425-.288-.712T12 10t-.712.288T11 11v3q0 .425.288.713T12 15"/></svg>
+                            <p>Door aanpassingen in de wetgeving is registratie vereist om toegang te krijgen tot 
+                            zorg vanaf 2025. </p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="container"></section>
+
+        <script>
+            const form = document.getElementById("formId");
+            const naam = document.getElementById("naam");
+            const datum = document.getElementById("datum");
+            const lengte = document.getElementById("lengte");
+            const gewicht = document.getElementById("gewicht");
+
+
+            form.addEventListener("submit", function (e) {
+                e.preventDefault();
+
+                const naamValue = naam.value;
+                const datumValue = datum.value;                
+                const lengteValue = lengte.value;
+                const gewichtValue = gewicht.value;
+
+                localStorage.setItem("naam", naamValue);
+                localStorage.setItem("geboorte-datum", datumValue);
+                localStorage.setItem("lengte-cm", lengteValue);
+                localStorage.setItem("gewicht-kg", gewichtValue);
+
+                // radio button
+                const selected = document.querySelector("input[name='geslacht']:checked").value;
+                localStorage.setItem("geslacht", selected);
+
+
+                console.log(selected);
+                window.location.href = "form2.html";
+            });
+        </script>
+    </body>
+</html>

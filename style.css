@@ -1,0 +1,521 @@
+body {
+    margin: 0;
+    padding: 0 ;
+    font-family: "Archivo", sans-serif;
+    font-size: 14px;
+    max-width: 400px;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.container {
+    padding: 0 20px;
+}
+
+.logo-text {
+    font-family: "Inter", sans-serif;
+    font-size: 11px;
+    text-align: center;
+    font-weight: 500;
+}
+
+#nav {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar > img {
+    width: 40px;
+}
+
+#welkom {
+    margin-top: 150px;
+}
+
+#welkom2 {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+#welkom3 {
+    margin-top: 80px
+}
+
+
+.div-welkom {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+h1 {
+      font-family: "Roboto Slab", serif;
+      font-size: 40px;
+      font-weight: bold;
+      text-align: center;
+      margin: 0;
+}
+
+h2 {
+    font-family: "Archivo", sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    text-align: center;
+    margin: 0;
+}
+
+.div-button {
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+.div-button button {
+    color: #ffff;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    border: none;
+    text-align: center;
+    background-color: #154273;
+    border-radius: 8px;
+    width: 100%;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.smallText {
+    font-family: "Archivo", sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 200;
+    text-align: justify;
+    margin-top: 22px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.warning {
+    background-color: #F3F3F3;
+    padding: 20px;
+    border: 1px solid #D00000;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.warning > svg {
+    width: 50px; 
+    color: #D00000;
+}
+
+.warning > p {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+#form {
+    margin-top: 50px;
+}
+
+.form-questions {
+    background-color: #ffff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+    box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+}
+
+.form-container label {
+    font-family: "Inter", sans-serif; 
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.geslacht-container label {
+    font-weight: 400;
+    margin-left: 5px;
+}
+
+.form-div p {
+    font-family: "Inter", sans-serif; 
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+
+.form-input {
+    font-family: "Inter", sans-serif; 
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 8px;
+    border: 1px solid #B3B7C1;
+}
+
+.form-input::placeholder {
+    color: #B3B7C1;
+}
+
+input[type=text] {
+    padding: 12px 20px;
+}
+
+input[type=date] {
+    padding: 12px 20px;
+}
+
+input[type=checkbox] {
+    width: 25px;
+}
+
+
+.form-div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-geslacht {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.form-radio {
+    display: flex;
+    flex-direction: row !important;
+}
+
+.uitzondering {
+    margin-top: 40px !important;
+}
+
+.geslacht-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.checkbox {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 20px 20px;
+}
+
+#checkboxText {
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 18px; 
+}
+
+
+
+.banner {
+    background-color: #01689B;
+    color: #ffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 70px;
+    margin: 20px 0;
+    margin-top: 10px;
+}
+
+h4 {
+    font-family: "Archivo", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.banner > p {
+    font-family: "Archivo", sans-serif;
+    font-size: 12px;
+    font-weight: 200;
+    font-style: italic;
+    margin: 0;
+
+}
+
+.gegevens-container {
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr;
+    gap: 20px;
+}
+
+.gegevens-div {
+    background-color: #F3F3F3;
+    border-radius: 8px;
+    padding: 20px 20px;
+}
+
+.gegevens-data {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 5px;
+}
+
+.gegevens-div p {
+    margin: 0;
+    padding: 0;
+    font-family: "Archivo", sans-serif;
+    font-size: 12px;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+
+.gegevens-extra {
+    font-style: italic;
+}
+
+.bmi {
+    grid-column: span 2;
+}
+
+h3 {
+    font-family: "Archivo", sans-serif;
+    font-size: 64px;
+    font-weight: 500;
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+}
+
+#menu {
+    position: fixed;
+    margin-top: 92svh;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.menu-div {
+    display: flex;
+    gap: 20px;
+}
+
+.menu-div a {
+    text-decoration: none;
+}
+
+.button {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    border: none;
+    text-align: center;
+    border-radius: 8px;
+    width: 100%;
+    padding: 10px; 
+    display: flex;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.selected {
+    background-color: #154273;
+    color: #ffff;
+    font-weight: 500;
+    box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.5);
+
+}
+
+.deselected {
+    background-color: #F3F3F3;
+    color: #154273;
+    font-weight: 600;
+    box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.15);
+}
+
+
+.score-uitleg {
+    background-color: #F3F3F3;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.score-uitleg > p {
+    margin: 0;
+    padding: 0;
+    line-height: 20px;    
+}
+
+.uitslag-container {
+    display: grid;
+    grid-template: 1fr 1fr / 1.5fr 1fr;
+    gap: 20px;
+    max-height: 200px;
+}
+
+.score-div {
+    grid-row: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px; 
+}
+
+#levensstijlScore {
+    font-size: 110px;
+    line-height: 90px;
+}
+
+#bmi, #score {
+    font-style: italic;
+}
+
+#toevoeging {
+    margin: 60px 0 140px 0;
+}
+
+#toevoeging p {
+    padding: 0 20px;
+    font-weight: 300;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+
+.levensstijlExtra {
+    margin: 2px !important;
+}
+
+#breadcrumb {
+    margin-top: 20px;
+}
+
+.breadcrumb {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #154273;
+}
+
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.75s,;
+}
+
+.loader-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader::after {
+    content: "";
+    pointer-events: none;
+    width: 15px;
+    height: 15px;
+    border: 3px solid #F3F3F3;
+    border-top-color: #01689B;
+    border-radius: 50%;
+    animation: loading 1s ease infinite;
+}
+
+#wrapper {
+    display: none;    
+}
+
+@keyframes loading {
+    from {
+        transform: rotate(0turn);
+    } to {
+        transform: rotate(1turn);
+    }
+}
+
+#uitleg {
+    margin: 100px 0 0;
+    padding: 20px;
+}
+
+#uitleg > h4 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.welkom-uitleg {
+    background-color: #F3F3F3;
+    padding: 20px;
+    border-radius: 8px;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.welkom-uitleg > p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.welkom-uitleg svg {
+    margin: 0;
+    padding: 0;
+    width: 50px;
+    rotate: 180deg;
+    color: #01689B;
+}
+
+.welkom-link {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.welkom-uitleg > a {
+    text-decoration: none;
+}
+
+.welkom-link:hover {
+    text-decoration: underline #01689B;
+}
+
+h5 {
+    color: #01689B;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.info-svg {
+    color: #154273;
+}
+
+@media (max-width: 321px) {
+    h3 {
+        font-size: 44px;
+    }
+
+    #levensstijlScore {
+    font-size: 90px;
+    line-height: 80px;
+}
+}
